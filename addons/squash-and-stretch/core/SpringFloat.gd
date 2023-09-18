@@ -21,7 +21,7 @@ func track_damping_ratio(target:float, angular_frequency:float, damping_ratio:fl
   velocity = det_v * det_inv
   value = det_x * det_inv
 
-  if velocity < SquashAndStretchUtil.EPSILON and delta < SquashAndStretchUtil.EPSILON:
+  if velocity < SquashAndStretchUtil.EPSILON and abs(delta) < SquashAndStretchUtil.EPSILON:
     velocity = 0.0
     value = target
 
