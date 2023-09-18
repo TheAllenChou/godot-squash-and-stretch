@@ -3,11 +3,11 @@ class_name SpringVector2
 @export var value:Vector2 = Vector2.ZERO
 @export var velocity:Vector2 = Vector2.ZERO
 
-func reset(init_value:Vector2, init_velocity:Vector2 = Vector2.ZERO):
+func reset(init_value:Vector2, init_velocity:Vector2 = Vector2.ZERO) -> void:
   value = init_value
   velocity = init_velocity
 
-func track_damping_ratio(target:Vector2, angular_frequency:float, damping_ratio:float, delta_time:float) -> void:
+func track_damping_ratio(target:Vector2, angular_frequency:float, damping_ratio:float, delta_time:float) -> Vector2:
   var delta:Vector2 = target - value
 
   var f:float = 1.0 + 2.0 * delta_time * damping_ratio * angular_frequency
@@ -27,7 +27,7 @@ func track_damping_ratio(target:Vector2, angular_frequency:float, damping_ratio:
 
   return value
 
-func track_half_life(target:Vector2, frequency_hz:float, half_life:float, delta_time:float):
+func track_half_life(target:Vector2, frequency_hz:float, half_life:float, delta_time:float) -> Vector2:
   if half_life < SquashAndStretchUtil.EPSILON:
     velocity = Vector2.ZERO
     value = target
@@ -37,7 +37,7 @@ func track_half_life(target:Vector2, frequency_hz:float, half_life:float, delta_
   var damping_ratio:float = SquashAndStretchUtil.LN_2 / (angular_frequency * half_life)
   return track_damping_ratio(target, angular_frequency, damping_ratio, delta_time)
 
-func track_exponential(target:Vector2, half_life:float, delta_time:float):
+func track_exponential(target:Vector2, half_life:float, delta_time:float) -> Vector2:
   if half_life < SquashAndStretchUtil.EPSILON:
     velocity = Vector2.ZERO
     value = target

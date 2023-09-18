@@ -12,11 +12,11 @@ class_name SpringQuaternion
   get:
     return velocity
 
-func reset(init_value:Quaternion, init_velocity:Quaternion = Quaternion(0.0, 0.0, 0.0, 0.0)):
+func reset(init_value:Quaternion, init_velocity:Quaternion = Quaternion(0.0, 0.0, 0.0, 0.0)) -> void:
   value = init_value
   velocity = init_velocity
 
-func track_damping_ratio(target:Quaternion, angular_frequency:float, damping_ratio:float, delta_time:float):
+func track_damping_ratio(target:Quaternion, angular_frequency:float, damping_ratio:float, delta_time:float) -> Quaternion:
   if target.dot(value) < 0.0:
     target = -target
     
@@ -39,7 +39,7 @@ func track_damping_ratio(target:Quaternion, angular_frequency:float, damping_rat
 
   return value
 
-func track_half_life(target:Quaternion, frequency_hz:float, half_life:float, delta_time:float):
+func track_half_life(target:Quaternion, frequency_hz:float, half_life:float, delta_time:float) -> Quaternion:
   if target.dot(value) < 0.0:
     target = -target
 
@@ -52,7 +52,7 @@ func track_half_life(target:Quaternion, frequency_hz:float, half_life:float, del
   var damping_ratio:float = SquashAndStretchUtil.LN_2 / (angular_frequency * half_life)
   return track_damping_ratio(target, angular_frequency, damping_ratio, delta_time)
 
-func track_exponential(target:Quaternion, half_life:float, delta_time:float):
+func track_exponential(target:Quaternion, half_life:float, delta_time:float) -> Quaternion:
   if target.dot(value) < 0.0:
     target = -target
 
