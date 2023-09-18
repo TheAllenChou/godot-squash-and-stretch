@@ -6,7 +6,6 @@ class_name SpringVector2
 func reset(init_value:Vector2, init_velocity:Vector2 = Vector2.ZERO):
   value = init_value
   velocity = init_velocity
-  pass
 
 func track_damping_ratio(target:Vector2, angular_frequency:float, damping_ratio:float, delta_time:float) -> void:
   var delta:Vector2 = target - value
@@ -25,7 +24,6 @@ func track_damping_ratio(target:Vector2, angular_frequency:float, damping_ratio:
   if velocity.length_squared() < SquashAndStretchUtil.EPSILON_SQR and delta.length_squared() < SquashAndStretchUtil.EPSILON_SQR:
     velocity = Vector2.ZERO
     value = target
-  pass
 
   return value
 

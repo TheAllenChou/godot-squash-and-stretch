@@ -15,7 +15,6 @@ class_name SpringQuaternion
 func reset(init_value:Quaternion, init_velocity:Quaternion = Quaternion(0.0, 0.0, 0.0, 0.0)):
   value = init_value
   velocity = init_velocity
-  pass
 
 func track_damping_ratio(target:Quaternion, angular_frequency:float, damping_ratio:float, delta_time:float):
   if target.dot(value) < 0.0:
