@@ -12,7 +12,7 @@ class_name SpringQuaternion
   get:
     return velocity
 
-func reset(init_value:Quaternion, init_velocity:Quaternion = Quaternion(0.0, 0.0, 0.0, 0.0)) -> void:
+func reset(init_value:Quaternion, init_velocity:Quaternion = Quaternion(0.0, 0.0, 0.0, 0.0)):
   value = init_value
   velocity = init_velocity
 

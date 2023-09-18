@@ -3,7 +3,7 @@ class_name SpringVector2
 @export var value:Vector2 = Vector2.ZERO
 @export var velocity:Vector2 = Vector2.ZERO
 
-func reset(init_value:Vector2, init_velocity:Vector2 = Vector2.ZERO) -> void:
+func reset(init_value:Vector2, init_velocity:Vector2 = Vector2.ZERO):
   value = init_value
   velocity = init_velocity
 
