@@ -4,3 +4,6 @@
 # Visual Studio Code
 .vs/
 *.code-workspace
+
+# Misc. Files
+*.tmp

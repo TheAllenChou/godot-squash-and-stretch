@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="squash-and-stretch"
+run/main_scene="res://addons/squash-and-stretch/test/rotation-spring/RotationSpring.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
-config/icon="res://icon.svg"
+
+[autoload]
+
+SquashAndStretchUtil="*res://addons/squash-and-stretch/core/SquashAndStretchUtil.gd"
 
 [rendering]
 
