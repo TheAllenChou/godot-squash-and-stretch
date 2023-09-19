@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dor5st8xkhl4v"]
 
-[ext_resource type="Script" path="res://addons/squash-and-stretch/test/rotation-spring/RotationSpringBox.gd" id="1_l6ckm"]
+[ext_resource type="Script" path="res://addons/squash-and-stretch/test/rotation-spring/RotationSpringBox.cs" id="1_5x816"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vksmn"]
 
@@ -13,7 +13,7 @@ emission_enabled = true
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_vksmn")
 surface_material_override/0 = SubResource("StandardMaterial3D_y1r5j")
-script = ExtResource("1_l6ckm")
+script = ExtResource("1_5x816")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.38981)
