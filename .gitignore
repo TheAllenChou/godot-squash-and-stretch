@@ -1,9 +1,12 @@
 # Godot 4+ specific ignores
 .godot/
 
-# Visual Studio Code
+# Visual Studio
 .vs/
 *.code-workspace
+*.csproj
+*.csproj.user
+*.sln
 
 # Misc. Files
 *.tmp
