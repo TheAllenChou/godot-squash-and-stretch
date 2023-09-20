@@ -70,7 +70,7 @@ namespace SquashAndStretchKit
       }
 
       float angularFrequency = frequencyHz * MathUtil.TwoPi;
-      float dampingRatio = 0.6931472f / (angularFrequency * halfLife);
+      float dampingRatio = MathUtil.Ln2 / (angularFrequency * halfLife);
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
 
@@ -83,7 +83,7 @@ namespace SquashAndStretchKit
         return Value;
       }
 
-      float angularFrequency = 0.6931472f / halfLife;
+      float angularFrequency = MathUtil.Ln2 / halfLife;
       float dampingRatio = 1.0f;
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
@@ -156,7 +156,7 @@ namespace SquashAndStretchKit
       }
 
       float angularFrequency = frequencyHz * MathUtil.TwoPi;
-      float dampingRatio = 0.6931472f / (angularFrequency * halfLife);
+      float dampingRatio = MathUtil.Ln2 / (angularFrequency * halfLife);
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
 
@@ -169,7 +169,7 @@ namespace SquashAndStretchKit
         return Value;
       }
 
-      float angularFrequency = 0.6931472f / halfLife;
+      float angularFrequency = MathUtil.Ln2 / halfLife;
       float dampingRatio = 1.0f;
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
@@ -244,7 +244,7 @@ namespace SquashAndStretchKit
       }
 
       float angularFrequency = frequencyHz * MathUtil.TwoPi;
-      float dampingRatio = 0.6931472f / (angularFrequency * halfLife);
+      float dampingRatio = MathUtil.Ln2 / (angularFrequency * halfLife);
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
 
@@ -257,7 +257,7 @@ namespace SquashAndStretchKit
         return Value;
       }
 
-      float angularFrequency = 0.6931472f / halfLife;
+      float angularFrequency = MathUtil.Ln2 / halfLife;
       float dampingRatio = 1.0f;
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
@@ -330,7 +330,7 @@ namespace SquashAndStretchKit
       }
 
       float angularFrequency = frequencyHz * MathUtil.TwoPi;
-      float dampingRatio = 0.6931472f / (angularFrequency * halfLife);
+      float dampingRatio = MathUtil.Ln2 / (angularFrequency * halfLife);
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
 
@@ -343,7 +343,7 @@ namespace SquashAndStretchKit
         return Value;
       }
 
-      float angularFrequency = 0.6931472f / halfLife;
+      float angularFrequency = MathUtil.Ln2 / halfLife;
       float dampingRatio = 1.0f;
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
@@ -446,7 +446,7 @@ namespace SquashAndStretchKit
       }
 
       float angularFrequency = frequencyHz * MathUtil.TwoPi;
-      float dampingRatio = 0.6931472f / (angularFrequency * halfLife);
+      float dampingRatio = MathUtil.Ln2 / (angularFrequency * halfLife);
       return TrackDampingRatio(targetValueVec, angularFrequency, dampingRatio, deltaTime);
     }
 
@@ -460,7 +460,7 @@ namespace SquashAndStretchKit
       }
 
       float angularFrequency = frequencyHz * MathUtil.TwoPi;
-      float dampingRatio = 0.6931472f / (angularFrequency * halfLife);
+      float dampingRatio = MathUtil.Ln2 / (angularFrequency * halfLife);
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }
 
@@ -473,7 +473,7 @@ namespace SquashAndStretchKit
         return QuaternionUtil.FromVector4(targetValueVec);
       }
 
-      float angularFrequency = 0.6931472f / halfLife;
+      float angularFrequency = MathUtil.Ln2 / halfLife;
       float dampingRatio = 1.0f;
       return TrackDampingRatio(targetValueVec, angularFrequency, dampingRatio, deltaTime);
     }
@@ -487,7 +487,7 @@ namespace SquashAndStretchKit
         return targetValue;
       }
 
-      float angularFrequency = 0.6931472f / halfLife;
+      float angularFrequency = MathUtil.Ln2 / halfLife;
       float dampingRatio = 1.0f;
       return TrackDampingRatio(targetValue, angularFrequency, dampingRatio, deltaTime);
     }

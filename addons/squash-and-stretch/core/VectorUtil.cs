@@ -2,7 +2,7 @@
 
 namespace SquashAndStretchKit
 {
-  public class VectorUtil
+  public static class VectorUtil
   {
     public static readonly Vector3 Min = new Vector3(float.MinValue, float.MinValue, float.MinValue);
     public static readonly Vector3 Max = new Vector3(float.MaxValue, float.MaxValue, float.MaxValue);
@@ -16,8 +16,24 @@ namespace SquashAndStretchKit
       results.Y = sin * v.X + cos * v.Y;
       return results;
     }
+
+    public static Vector2 SafeNormalize(Vector2 v, Vector2 fallback)
+    {
+      return
+        v.LengthSquared() > MathUtil.Epsilon
+        ? v.Normalized()
+        : fallback;
+    }
+
+    public static Vector3 SafeNormalize(Vector3 v, Vector3 fallback)
+    {
+      return
+        v.LengthSquared() > MathUtil.Epsilon 
+        ? v.Normalized() 
+        : fallback;
+    }
     
-    public static Vector4 NormalizeSafe(Vector4 v, Vector4 fallback)
+    public static Vector4 SafeNormalize(Vector4 v, Vector4 fallback)
     {
       return
         v.LengthSquared() > MathUtil.Epsilon 

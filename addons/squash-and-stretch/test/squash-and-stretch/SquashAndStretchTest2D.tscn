@@ -10,9 +10,9 @@
 [node name="Mouse Follower" type="Node" parent="Object"]
 script = ExtResource("1_0iqrb")
 
+[node name="Squash & Stretch" type="Node" parent="Object"]
+script = ExtResource("2_ffkut")
+
 [node name="Box" type="Polygon2D" parent="Object"]
 color = Color(0.203922, 0.780392, 0.733333, 1)
 polygon = PackedVector2Array(-40, -40, -40, 40, 40, 40, 40, -40)
-
-[node name="Squash & Stretch" type="Node" parent="Object"]
-script = ExtResource("2_ffkut")

@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="squash-and-stretch"
-run/main_scene="res://addons/squash-and-stretch/test/rotation-spring/RotationSpring.tscn"
+run/main_scene="res://addons/squash-and-stretch/test/squash-and-stretch/SquashAndStretchTest3D.tscn"
 config/features=PackedStringArray("4.1", "C#", "GL Compatibility")
+
+[autoload]
+
+SquashAndStretchUtil="*res://addons/squash-and-stretch/core/SquashAndStretchUtil.gd"
 
 [dotnet]
 

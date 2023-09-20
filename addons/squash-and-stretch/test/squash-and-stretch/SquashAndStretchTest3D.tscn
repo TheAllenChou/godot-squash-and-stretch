@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://bypbc0osakrg7"]
+
+[ext_resource type="Script" path="res://addons/squash-and-stretch/test/common/MouseRotator.cs" id="1_1segr"]
+[ext_resource type="PackedScene" uid="uid://jiotgeg570g1" path="res://addons/squash-and-stretch/test/squash-and-stretch/Satellite.tscn" id="2_3ph3u"]
+[ext_resource type="Script" path="res://addons/squash-and-stretch/node/SquashAndStretch3D.cs" id="2_yiqrd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dsvkg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5fwn"]
+albedo_color = Color(0.109804, 0.329412, 0.717647, 1)
+
+[node name="SquashAndStretchTest3D" type="Node3D"]
+
+[node name="Core" type="Node3D" parent="."]
+
+[node name="Mouse Rotator" type="Node" parent="Core"]
+script = ExtResource("1_1segr")
+
+[node name="Satellite" parent="Core" instance=ExtResource("2_3ph3u")]
+
+[node name="Satellite2" parent="Core" instance=ExtResource("2_3ph3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, -0.7, 0.7)
+
+[node name="Satellite3" parent="Core" instance=ExtResource("2_3ph3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0.7, 0.7)
+
+[node name="Satellite4" parent="Core" instance=ExtResource("2_3ph3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, -0.7, 0.7)
+
+[node name="Satellite5" parent="Core" instance=ExtResource("2_3ph3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.7, -0.7)
+
+[node name="Satellite6" parent="Core" instance=ExtResource("2_3ph3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, -0.7, -0.7)
+
+[node name="Satellite7" parent="Core" instance=ExtResource("2_3ph3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0.7, -0.7)
+
+[node name="Satellite8" parent="Core" instance=ExtResource("2_3ph3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, -0.7, -0.7)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Core"]
+mesh = SubResource("BoxMesh_dsvkg")
+surface_material_override/0 = SubResource("StandardMaterial3D_b5fwn")
+
+[node name="Squash & Stretch" type="Node" parent="Core/MeshInstance3D"]
+script = ExtResource("2_yiqrd")
+MaxStretch = 0.5
+MinSpeedThreshold = 5.0
+MaxSpeedThreshold = 40.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.74789)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25086, 0.809603, 9.97732)
+light_energy = 10.0
+omni_range = 24.3546
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.31377, -3.76245, -4.07446)
+light_energy = 2.0
+omni_range = 16.3502

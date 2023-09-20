@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://jiotgeg570g1"]
+
+[ext_resource type="Script" path="res://addons/squash-and-stretch/node/SquashAndStretch3D.cs" id="1_n26gm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dsvkg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25o23"]
+albedo_color = Color(0.678431, 0.368627, 0.678431, 1)
+
+[node name="Satellite" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.7, 0.7)
+
+[node name="Squash & Stretch" type="Node" parent="."]
+script = ExtResource("1_n26gm")
+MaxStretch = 1.5
+MinSpeedThreshold = 1.5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+mesh = SubResource("BoxMesh_dsvkg")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_25o23")

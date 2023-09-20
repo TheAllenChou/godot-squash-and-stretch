@@ -25,6 +25,8 @@ namespace SquashAndStretchKit
     public static readonly float Sqrt3    = Mathf.Sqrt(3.0f);
     public static readonly float Sqrt3Inv = 1.0f / Mathf.Sqrt(3.0f);
 
+    public static readonly float Ln2 = 0.69314718056f;
+
     public static readonly float Epsilon = 1.0e-6f;
     public static readonly float EpsilonSqr = Epsilon * Epsilon;
     public static readonly float Rad2Deg = 180.0f / Mathf.Pi;
