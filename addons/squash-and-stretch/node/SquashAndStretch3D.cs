@@ -27,7 +27,7 @@ public partial class SquashAndStretch3D : Node
 
   public override void _Process(double delta)
   {
-    if(m_postRender == null)
+    if (m_postRender == null)
     {
       m_postRender = new PostRender3D(m_node);
       m_postRender.Name = $"{Name} (post-render)";

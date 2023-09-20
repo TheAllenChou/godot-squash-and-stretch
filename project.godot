@@ -12,7 +12,7 @@ config_version=5
 
 config/name="squash-and-stretch"
 run/main_scene="res://addons/squash-and-stretch/test/squash-and-stretch/SquashAndStretchTest3D.tscn"
-config/features=PackedStringArray("4.1", "C#", "GL Compatibility")
+config/features=PackedStringArray("4.1", "GL Compatibility")
 
 [autoload]
 
