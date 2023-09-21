@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*
+  Project   - Squash & Stretch plugin for Godot
+              https://github.com/TheAllenChou/godot-squash-and-stretch
+  Author    - Ming-Lun "Allen" Chou
+              http://AllenChou.net
+*/
+/******************************************************************************/
+
 using Godot;
 
 namespace SquashAndStretchKit

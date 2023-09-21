@@ -1,4 +1,5 @@
 using Godot;
+
 using SquashAndStretchKit;
 
 public partial class MouseManipulator3D : Node
