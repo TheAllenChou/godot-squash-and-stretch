@@ -7,8 +7,8 @@
 *.csproj
 *.csproj.user
 *.sln
+Properties
 
 # Misc. Files
 *.tmp
-images/*.import
-videos/*.import
+img/*.import
