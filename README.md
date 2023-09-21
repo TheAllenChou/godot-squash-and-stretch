@@ -9,4 +9,4 @@ Applies squash & stretch effects based on velocity.
 
 Just add squash & stretch nodes to the desired node to manipulate.
 
-![nodes](/images/nodes.png)
+![nodes](/img/nodes.png)
