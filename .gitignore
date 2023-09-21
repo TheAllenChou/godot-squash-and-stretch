@@ -2,7 +2,7 @@
 .godot/
 
 # Visual Studio
-.vs/
+.vs
 *.code-workspace
 *.csproj
 *.csproj.user
@@ -10,3 +10,5 @@
 
 # Misc. Files
 *.tmp
+images/*.import
+videos/*.import
