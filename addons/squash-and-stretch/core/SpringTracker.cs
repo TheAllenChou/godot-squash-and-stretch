@@ -11,7 +11,7 @@ using Godot;
 
 using System.Runtime.InteropServices;
 
-namespace SquashAndStretchKit
+namespace SquashAndStretch
 {
   [StructLayout(LayoutKind.Sequential, Pack = 0)]
   public struct FloatSpring

@@ -9,7 +9,7 @@
 
 using Godot;
 
-namespace SquashAndStretchKit
+namespace SquashAndStretch
 {
   public partial class SquashAndStretch2D : Node
   {

@@ -1,6 +1,6 @@
 using Godot;
 
-using SquashAndStretchKit;
+using SquashAndStretch;
 
 public partial class MouseFollower2D : Node
 {
