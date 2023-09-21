@@ -3,7 +3,7 @@ by **Ming-Lun "Allen" Chou** / [AllenChou.net](http://AllenChou.net) / [@TheAlle
 
 ![squash-and-stretch-2d](/img/squash-and-stretch-2d.gif) ![squash-and-stretch-3d](/img/squash-and-stretch-3d.gif)
 
-Applies squash & stretch effects based on velocity.
+Applies squash & stretch effects based on velocity.  
 This is my first Godot project. I hope you like it.
 
 ### Usage
