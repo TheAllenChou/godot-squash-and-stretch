@@ -8,9 +8,8 @@
 albedo_color = Color(0.678431, 0.368627, 0.678431, 1)
 
 [node name="Satellite" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.7, 0.7)
 
-[node name="Squash & Stretch" type="Node" parent="."]
+[node name="Squash & Stretch 3D" type="Node" parent="."]
 script = ExtResource("1_n26gm")
 MaxStretch = 1.5
 MinSpeedThreshold = 1.5

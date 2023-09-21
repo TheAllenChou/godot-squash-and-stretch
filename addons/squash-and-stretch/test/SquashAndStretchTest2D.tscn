@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dtxeu8h0r2luv"]
 
-[ext_resource type="Script" path="res://addons/squash-and-stretch/test/common/MouseFollower.cs" id="1_0iqrb"]
+[ext_resource type="Script" path="res://addons/squash-and-stretch/test/common/MouseFollower2D.cs" id="1_1evwd"]
 [ext_resource type="Script" path="res://addons/squash-and-stretch/node/SquashAndStretch2D.cs" id="2_ffkut"]
 
 [node name="SquashAndStretchTest2D" type="Node2D"]
@@ -8,9 +8,9 @@
 [node name="Object" type="Node2D" parent="."]
 
 [node name="Mouse Follower" type="Node" parent="Object"]
-script = ExtResource("1_0iqrb")
+script = ExtResource("1_1evwd")
 
-[node name="Squash & Stretch" type="Node" parent="Object"]
+[node name="Squash & Stretch 2D" type="Node" parent="Object"]
 script = ExtResource("2_ffkut")
 
 [node name="Box" type="Polygon2D" parent="Object"]

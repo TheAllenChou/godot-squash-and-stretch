@@ -1,7 +1,7 @@
 using Godot;
 using SquashAndStretchKit;
 
-public partial class MouseFollower : Node
+public partial class MouseFollower2D : Node
 {
   private Node2D m_node;
 

@@ -14,13 +14,13 @@ config/name="squash-and-stretch"
 run/main_scene="res://addons/squash-and-stretch/test/SquashAndStretchTest3D.tscn"
 config/features=PackedStringArray("4.1", "C#", "GL Compatibility")
 
-[autoload]
-
-SquashAndStretchUtil="*res://addons/squash-and-stretch/core/SquashAndStretchUtil.gd"
-
 [dotnet]
 
 project/assembly_name="squash-and-stretch"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/squash-and-stretch/plugin.cfg")
 
 [rendering]
 

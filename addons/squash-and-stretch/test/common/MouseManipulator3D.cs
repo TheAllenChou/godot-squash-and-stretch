@@ -1,7 +1,7 @@
 using Godot;
 using SquashAndStretchKit;
 
-public partial class MouseRotator : Node
+public partial class MouseManipulator3D : Node
 {
   private Node3D m_node;
 
