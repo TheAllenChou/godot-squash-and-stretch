@@ -8,6 +8,6 @@ This is my first Godot project. I hope you like it.
 
 ### Usage
 
-Just add squash & stretch nodes to the desired node to manipulate.
+Just add a squash & stretch node to the desired node as a child.
 
 ![nodes](/img/nodes.png)
