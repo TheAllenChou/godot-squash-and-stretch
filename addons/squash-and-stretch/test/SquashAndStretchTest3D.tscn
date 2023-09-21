@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bypbc0osakrg7"]
 
 [ext_resource type="Script" path="res://addons/squash-and-stretch/test/common/MouseRotator.cs" id="1_1segr"]
-[ext_resource type="PackedScene" uid="uid://jiotgeg570g1" path="res://addons/squash-and-stretch/test/squash-and-stretch/Satellite.tscn" id="2_3ph3u"]
+[ext_resource type="PackedScene" uid="uid://jiotgeg570g1" path="res://addons/squash-and-stretch/test/common/Satellite.tscn" id="2_3ph3u"]
 [ext_resource type="Script" path="res://addons/squash-and-stretch/node/SquashAndStretch3D.cs" id="2_yiqrd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_dsvkg"]
