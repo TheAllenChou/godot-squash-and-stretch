@@ -8,6 +8,11 @@ This is my first Godot project. I hope you like it.
 
 ### Usage
 
-Just add a squash & stretch node to the desired node as a child.
+To enable the plugin, the C# scripts need to be built first:
+1. Create/Update the C# solution: Project > Tools > C# > Create C# Solution
+2. Press the Build button at the top-right corner of the editor.
+3. Enable the plugin: Project > Plugins > Enable the Squash & Stretch plugin
+
+Then, just add a squash & stretch node to the desired node as a child.
 
 ![nodes](/img/nodes.png)
